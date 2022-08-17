@@ -1,0 +1,9 @@
+{
+    "presets":["@babel/preset-env"]
+}
+
+//babel config 설정하는 이유
+//--preset 과 plugin 을 추가하지 않으면 babel 은 그 자체로는 아무것도 하지 않음
+//preset 은 babel 에 추가해야할 다양한 plugin 들을 자동으로 설치하게 해줌
+
+

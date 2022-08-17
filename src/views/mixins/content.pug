@@ -1,0 +1,9 @@
+mixin content(contents)
+    div     
+        h4
+            a(href=`/watch/${contents.id}`)=contents.title
+        p=contents.content
+        small=contents.createdAt
+        ul 
+            li=contents.hashtags 
+        hr

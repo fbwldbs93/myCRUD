@@ -1,0 +1,9 @@
+extends base
+
+block content 
+    form(method="POST")
+        input(type='text', value=contents.title, name='title', required)
+        input(type='text', value=contents.content, name='content', required)
+        input(name="hashtags", value=contents.hashtags.join(), placeholder="split with comma")
+        input(type='submit', value="Edit Content")
+        

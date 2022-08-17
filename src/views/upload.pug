@@ -1,0 +1,10 @@
+extends base.pug
+
+block content 
+    if errMsg
+        p=errMsg
+    form(method="POST")
+        input(name="title", placeholder="Please enter title", required, type="text")
+        input(name="content", placeholder="Please enter content")
+        input(name="hashtags", placeholder="split with comma")
+        input(type="submit", value="upload content")

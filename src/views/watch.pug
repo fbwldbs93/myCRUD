@@ -1,0 +1,12 @@
+extends base.pug
+
+
+block content 
+    div     
+        h4=contents.title 
+        p=contents.content
+        small=contents.hashtags
+        br
+        a(href=`/watch/${contents.id}/edit`) Edit &nbsp;
+        a(href=`/watch/${contents.id}/delete`) Delete
+

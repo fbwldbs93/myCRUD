@@ -1,0 +1,11 @@
+extends base.pug
+include mixins/content
+
+block content 
+    if users 
+        p 환영합니다
+
+    each item in contents 
+        +content(item)
+
+    

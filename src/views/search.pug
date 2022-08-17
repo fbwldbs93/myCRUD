@@ -1,0 +1,10 @@
+extends base.pug
+include mixins/content
+
+block content 
+    form(method="GET")
+        input(type="text" name='keyword' placeholder='search')
+        input(type="submit" value='Search')
+    
+    each item in contents
+        +content(item)
